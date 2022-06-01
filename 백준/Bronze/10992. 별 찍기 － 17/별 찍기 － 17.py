@@ -1,11 +1,8 @@
-N = int(input())
+n = int(input())
+print(' ' * (n-1) + '*')
 
-for i in range(1, N+1):
-    if i == 1:  # 첫 번째 줄
-        print(' ' * (N - i) + "*")
+for i in range(2, n):
+    print(' ' * (n-i) + '*' + ' ' * (2 * (i-2) + 1) + '*')
 
-    elif i == N:  # 마지막 줄
-        print("*" * (i * 2 - 1))
-
-    else:  # 중간
-        print(' ' * (N - i) + "*" + ' ' * (i * 2 - 3) + "*")
+if n >= 2:
+    print('*' * (2 * n - 1))
