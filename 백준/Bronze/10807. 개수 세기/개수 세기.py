@@ -1,5 +1,5 @@
-N = int(input())
-N_list = list(map(int, input().split()))
+n = int(input())
+n_list = list(map(int, input().split()))
 v = int(input())
 
-print(N_list.count(v))
+print(n_list.count(v))
