@@ -1,9 +1,9 @@
 t = int(input())
 
-for i in range(1, t+1):
+for _ in range(1, t+1):
     num, word = input().split()
-    text = ''
+    text =''
 
-    for j in word:
-        text += int(num) * j
+    for i in word:
+        text += int(num) * i
     print(text)
