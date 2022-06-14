@@ -1,0 +1,9 @@
+def solution(s):
+    q = len(s)
+    t = q // 2
+
+    if q % 2 == 1:
+        return s[t]
+
+    else:
+        return s[t - 1] + s[t]
