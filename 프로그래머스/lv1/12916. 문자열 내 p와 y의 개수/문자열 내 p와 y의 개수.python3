@@ -1,12 +1,12 @@
-def solution(n):
-    n = n.lower()
-    p = n.count('p')
-    y = n.count('y')
+def solution(s):
+    s = s.upper()
+    p = s.count('P')
+    y = s.count('Y')
 
     if p == 0 and y == 0:
         return True
 
     if p == y:
         return True
-    elif p != y:
+    else:
         return False
