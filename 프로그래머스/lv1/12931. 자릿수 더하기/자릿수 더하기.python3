@@ -1,2 +1,2 @@
-def solution(number):
-    return sum(map(int,str(number)))
+def solution(n):
+    return sum(map(int, str(n)))
