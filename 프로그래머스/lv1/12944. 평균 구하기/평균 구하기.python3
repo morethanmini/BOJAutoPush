@@ -1,2 +1,14 @@
+"""
 def solution(arr):
     return sum(arr)/len(arr)
+"""
+
+def solution(arr):
+    sum = 0
+
+    for i in arr:
+        sum += i
+
+    avg = sum / len(arr)
+
+    return avg
