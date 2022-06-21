@@ -1,13 +1,11 @@
-word = input().upper()
-word_list = list(set(word))
+a = input().upper()
+b = list(range(ord("A"), ord("Z")+1))
+arr = []
 
-cnt = []
-for i in word_list:
-    count = word.count
-    cnt.append(count(i))
+for i in b:
+    arr.append(a.count(chr(i)))
 
-if cnt.count(max(cnt)) > 1:
+if arr.count(max(arr)) > 1:
     print("?")
-
 else:
-    print(word_list[(cnt.index(max(cnt)))])
+    print(chr(b[arr.index(max(arr))]))
