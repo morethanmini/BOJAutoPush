@@ -3,10 +3,8 @@ def solution(my_string):
 
     for char in my_string:
         if char.isdigit():
-            answer.append(char)
+            answer.append(int(char))
     
     answer.sort()
     
-    answer = [int(x) for x in answer]
-
     return answer
